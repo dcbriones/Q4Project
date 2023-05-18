@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+  <title></title>
+  <style type="text/css">
+    body{
+      background-attachment: fixed;
+      padding: 100px;
+    }
+    .container{
+      padding: 45px;
+    }
+  </style>
+</head>
+<body class="bg-dark">
+<img src="MEASUREMENT.jpg" width="325" height="50">
+<br>
+<br>
+<br>
+<br>
+<div class="container bg-warning">
+<div>
+<form>
+  <label><h1>Enter Millimeters:</h1></label>
+  <br>
+  <input style="background-color: lightgrey;" type="number" name="milm" id="milm" align="center">
+  <br>
+  <br>
+  <button class="text-warning" style="background-color: black;"type="submit" onclick="Compute()"><h1>Calculate</h1></button>
+  </form>
+</div>
+</div>
+<script>
+  function Compute() {
+    var milm = document.getElementById("milm").value;
+    let Centimeters = milm / 10;
+    let Meters = milm / 1000;
+    let Kilometers = milm / 1000000;
+    window.alert("Centimeters: " + Centimeters + "\n"+"Meters: " + Meters + "\n"+"Kilometers: " + Kilometers);
+  }
+</script>
+
+</body>
+</html>
